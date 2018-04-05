@@ -1,0 +1,28 @@
+---
+title: "Untitled"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Background:
+
+  The current approach to finding fossils of any sort is centered around previous finds. However, they tend to have similar enviornments that they are found in.
+
+## Question:
+
+  What if there were a way to look at an environment, and be able to tell if there would be fossils there, or not? This project is intended to find what environmental factors are the most condusive to paleontological occurrences.
+  
+## Data:
+
+  a .csv file of pliestocene mammal occurences from the paleobiology database navigator, which is a platform dedicated to hosting paleobiology finds of all kinds. It housed at the University of Wisconsin, Madison.
+  
+  I attained the data through the 'PBDB' navigator page, which has a set of criteria you can choose between when downloading.
+  
+  http://paleobiodb.org/data1.2/occs/list.csv?datainfo&rowcount&max_ma=2.588&min_ma=.0117&cc=ATA,AFR,ASI,AUS,EUR,NOA,OCE,SOA&show=abund,coords,loc
+  
+  Individual obervations are fossil finds and associated information. A row consists of the occurence number, the identified animal, the taxonomic level it was identified to, the stratigraphic time unit it lived during, the latitude and longitude of the find, and the common name of that location. A column consists of one of these factors, while a row consists of all of them for a single occurrence.
+  
+  My variables are paleological occurrences, and the environmental factors that surround them.
